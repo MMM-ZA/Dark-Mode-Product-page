@@ -3,6 +3,7 @@
 *{
   margin: 0;
   padding: 0;
+  list-style: none;
   text-decoration: none;
   font-family: 'Cardo', serif;
 }
@@ -20,49 +21,58 @@ body {
   position: relative;
 }
 header{
-  width: 100vh;
+  min-width: 100vh;
   height: 10vh;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   padding: 10px;
-  border: 5px solid #e8c573;
+ border: 3px solid #e8c573;
+
 }
 
-header ul{
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  width: 60%;
-  padding-right: 140px;
-}
 header .logo {
   width: 10%;
+  height: 50px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  padding-left: 70px;
+  margin: 0;
 }
-
-.navbar-items {
-  justify-content: flex-end;
-}
-header ul li a {
-  font-size: 18px;
-  padding: 8px 20px;
-  margin: 0 6px;
-  color: white;
-
-}
-
-header ul li a:hover {
-  color: #f2d280;
+header .logo img {
+  width: 60px;
+  margin-right: -7px;
 }
 header .logo h1 {
   font-size: 45px;
   color: #e8c573;
   font-style: italic;
 }
+.navbar-items {
+display: flex;
+justify-content: end;
+align-items: center;
+}
+header ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 60%;
+  padding-right: 140px;
+  align-items: flex-end;
+}
+
+header ul li a {
+  font-size: 18px;
+  padding: 8px 20px;
+  margin: 0 6px;
+  color: white;
+}
+
+header ul li a:hover {
+  color: #f2d280;
+}
+
 .main {
   width: 100%;
   height: 90vh;
@@ -74,8 +84,9 @@ header .logo h1 {
 .text-card {
   width: 60%;
   height: 100%;
-  padding-left: 100px;
+  padding-left: 20px;
   padding-top: 220px;
+  justify-content: center;
 }
 
 .text-card h1 {
@@ -88,6 +99,10 @@ header .logo h1 {
 }
 .text-card p {
  color: white;
+ width: 80%;
+ margin-top: 10px;
+ letter-spacing: 1px;
+ font-size: 16px;
 }
 button {
   font-weight: 500;
@@ -100,27 +115,37 @@ button {
   margin-top: 50px;
   cursor: pointer;
 }
+button:hover {
+  background: linear-gradient(#e5d6b2, #e8c573);
+  border: 1px solid whitesmoke;
+  color: black;
+}
 .image-card {
   width: 40%;
-  height: 100%;
-  /* position: absolute; */
-  top: 50%;
-  left: 60%;
+  height: 50%;
+  /* top: 50%; */
+  /* left: 80%; */
   transform: translate(-50%, -50%);
   display: flex;
-  align-items: center;
+  justify-content: space-between;
+}
+.image-list{
+  display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 .image-card img {
   width: 80px;
   cursor: pointer;
   margin: 18px 0;
+  display: flex;
+  align-items: center;
 }
 
 .main-image img {
-  width: 550px;
+  width: 400px;
   transition: all 0.5s ease;
+  display: flex;
+  justify-content:space-between;
 }
 
 .image-card img:hover {
