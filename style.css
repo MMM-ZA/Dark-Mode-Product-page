@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@700&family=Roboto:ital,wght@0,100;0,400;1,400;1,500&display=swap');
 
 *{
   margin: 0;
   padding: 0;
   list-style: none;
   text-decoration: none;
-  font-family: 'Cardo', serif;
+  font-family: 'Roboto', sans-serif;
 }
 body {
   width: 100%;
@@ -32,7 +33,7 @@ header{
 }
 
 header .logo {
-  width: 10%;
+  width: 30%;
   height: 50px;
   display: flex;
   align-items: center;
@@ -47,6 +48,7 @@ header .logo h1 {
   font-size: 45px;
   color: #e8c573;
   font-style: italic;
+  font-family: 'Cardo', serif ;
 }
 .navbar-items {
 display: flex;
@@ -57,8 +59,7 @@ header ul {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  width: 60%;
-  padding-right: 140px;
+  width: 50%;
   align-items: flex-end;
 }
 
@@ -67,6 +68,7 @@ header ul li a {
   padding: 8px 20px;
   margin: 0 6px;
   color: white;
+  font-weight: 200;
 }
 
 header ul li a:hover {
@@ -78,7 +80,7 @@ header ul li a:hover {
   height: 90vh;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   padding-top: 10px;
 }
 .text-card {
@@ -92,10 +94,26 @@ header ul li a:hover {
 .text-card h1 {
  font-size: 40px;
  color: #e8c573;
+ font-family: 'Roboto', sans-serif;
+ font-weight: 400;
+ font-style: italic;
 }
 
 .text-card h2 {
  color: white;
+ font-weight: 200;
+}
+.text-card h3 {
+ font-weight: 600;
+ color: #f2d288;
+ font-size: 24px;
+
+}
+.underline {
+  height: 1px;
+  width: 6%;
+  margin-top: 50px;
+  background-color: #e8c573;
 }
 .text-card p {
  color: white;
@@ -103,6 +121,7 @@ header ul li a:hover {
  margin-top: 10px;
  letter-spacing: 1px;
  font-size: 16px;
+ font-weight: 200;
 }
 button {
   font-weight: 500;
@@ -121,10 +140,9 @@ button:hover {
   color: black;
 }
 .image-card {
-  width: 40%;
-  height: 50%;
-  /* top: 50%; */
-  /* left: 80%; */
+  width: 30%;
+  height: 45%;
+  margin-right:-5px;
   transform: translate(-50%, -50%);
   display: flex;
   justify-content: space-between;
